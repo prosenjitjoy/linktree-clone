@@ -1,0 +1,48 @@
+---
+import MainLayout from "@layouts/MainLayout.astro";
+import Avatar from "@components/Avatar.astro";
+import FeaturedCardsLayout from "@layouts/FeaturedCardsLayout.astro";
+import FeaturedCard from "@components/FeaturedCard.astro";
+import LinksLayout from "@layouts/LinksLayout.astro";
+import Link from "@components/Link.astro";
+import Social from "@components/Social.astro";
+---
+
+<MainLayout title="Astro LinkTree Clone">
+	<Avatar />
+	<FeaturedCardsLayout>
+		<FeaturedCard
+			featuredCardIcon="mdi:twitter"
+			featuredCardTitle="Support Us!"
+			featuredCardLink="http://twitter.com/astrodotbuild"
+		/>
+		<FeaturedCard
+			featuredCardIcon="ic:baseline-discord"
+			featuredCardTitle="Join Community!"
+			featuredCardLink="https://www.discord.com"
+		/>
+		<FeaturedCard
+			featuredCardIcon="uil:github"
+			featuredCardTitle="Visit Github!"
+			featuredCardLink="https://www.github.com"
+		/>
+	</FeaturedCardsLayout>
+	<LinksLayout>
+		<Link
+      linkTitle='🧑‍🚀 Astro'
+      linkDescription='Astro Homepage'
+      linkUrl='https://www.astro.build'
+    />
+    <Link
+      linkTitle='🌍 My Portfolio'
+      linkDescription='Look at my portfolio!'
+      linkUrl='https://www.stefanrows.com'
+    />
+    <Link
+      linkTitle='🎥 YouTube'
+      linkDescription='Visit my YouTube channel!'
+      linkUrl='https://www.youtube.com/c/stefanrows'
+    />
+	</LinksLayout>
+	<Social />
+</MainLayout>
